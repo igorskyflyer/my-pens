@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/solid.css');
+
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css');
+
+@keyframes animation-star {
+  from {
+    color: #fff;
+  }
+
+  to {
+    color: #ffff0f;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to bottom right, #1d976c, #93f9b9);
+  color: #fff;
+  font-family: 'Dosis', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.radio-card {
+  width: 480px;
+  height: 150px;
+  padding: 1rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 0 5px inset rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.radio-meta {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.radio-frequency {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.radio-meta h2 {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+
+.radio-icon {
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all linear 0.1s;
+}
+
+.radio-icon:hover {
+  color: #06f;
+}
+
+.radio-poweroff-icon {
+  padding: 5px;
+  border-radius: 50%;
+  background: #fff;
+  color: #f00;
+}
+
+.radio-star-icon {
+  animation: animation-star 1s infinite alternate;
+}
+
+.radio-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.radio-column h4 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.radio-title {
+  height: 48px;
+  padding: 0 2.5rem;
+}
+
+.radio-title h2 {
+  letter-spacing: 6px;
+}
