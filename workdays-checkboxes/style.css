@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+@keyframes anim-show {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+section {
+  background: #fff;
+  width: 480px;
+  height: 240px;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 100px 8px rgba(255, 255, 255, 0.4);
+  font-family: 'Poppins', sans-serif;
+  transition: all ease-out 120ms;
+  animation-name: anim-show;
+  animation-duration: 500ms;
+}
+
+h3 {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.day-selector {
+  cursor: pointer;
+}
+
+.day-selector .checkbox {
+  opacity: 0;
+}
+
+.day-selector .selection {
+  display: inline-flex;
+  min-width: 40px;
+  min-height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 0.65rem;
+  border-radius: 50%;
+  border: 2px solid #0099ff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: #0099ff;
+  text-align: center;
+  transition: all ease-in 75ms;
+}
+
+.day-selector .selection:hover {
+  background: #0099ff;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  color: #fff;
+  transform: scale(1.15);
+}
+
+.day-selector .checkbox:checked ~ .selection {
+  background: rgba(0, 128, 255, 0.3);
+  color: #000;
+  font-weight: bold;
+}
+
+#message {
+  margin-top: 3rem;
+  text-align: center;
+  color: #444;
+}
