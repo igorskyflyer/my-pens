@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  background: #001133;
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 80vw;
+  height: 70vh;
+  position: relative;
+  margin: auto;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  background: #32407b;
+}
+
+.lines div {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+  animation: anim-effect 1s forwards;
+  transition: all ease 0.5s;
+}
+
+.lines div:nth-child(odd) {
+  height: 0;
+  opacity: 1;
+  background: cornflowerblue;
+}
+
+.lines div:nth-child(even) {
+  top: unset;
+  bottom: calc(100% - height);
+  height: 0;
+  opacity: 1;
+  background: cornflowerblue;
+}
+
+.lines div:nth-child(0) {
+  left: -20%;
+  animation-delay: 0s;
+}
+
+.lines div:nth-child(1) {
+  left: 0%;
+  animation-delay: 1s;
+}
+
+.lines div:nth-child(2) {
+  left: 20%;
+  animation-delay: 2s;
+}
+
+.lines div:nth-child(3) {
+  left: 40%;
+  animation-delay: 3s;
+}
+
+.lines div:nth-child(4) {
+  left: 60%;
+  animation-delay: 4s;
+}
+
+.lines div:nth-child(5) {
+  left: 80%;
+  animation-delay: 5s;
+}
+
+@keyframes anim-effect {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
