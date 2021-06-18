@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Block */
+.btn {
+  display: block;
+  padding: 0.8rem 4rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  font-family: 'Manjari', sans-serif;
+  font-size: 1.3rem;
+  transition: background linear 300ms;
+}
+
+.btn:hover {
+  background: #02f;
+}
+
+/*	Element	*/
+.btn__title {
+  display: inline-block;
+  /* quick vertical center */
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* Modifier - flag */
+.btn__title--disabled {
+  color: #000;
+}
+
+.btn--blue {
+  background: linear-gradient(to bottom right, #03f, #08f);
+}
+
+.btn--red {
+  background: linear-gradient(to bottom right, #800, #a00);
+}
+
+.btn--red:hover {
+  background: #700;
+}
+
+.btn--disabled {
+  background: #ccc;
+  cursor: default;
+}
+
+.btn--disabled:hover {
+  background: #999;
+}
