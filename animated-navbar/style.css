@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  background: linear-gradient(to right, #396afc, #2948ff);
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  width: 35vw;
+  border-radius: 4px;
+  box-shadow: 1px 1px 120px rgba(255, 255, 255, 0.7),
+    -2px -2px 8px rgba(0, 0, 0, 0.3), 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: block;
+  position: relative;
+  padding: 1rem;
+  background: #eee;
+  color: #000;
+  z-index: 1;
+  cursor: pointer;
+}
+
+nav ul li:nth-child(1) {
+  border-left: 10px solid #09f;
+}
+
+nav ul li:nth-child(1):hover::after {
+  width: calc(100% + 1px);
+  background: #09f;
+}
+
+nav ul li:nth-child(2) {
+  border-left: 10px solid #f00;
+}
+
+nav ul li:nth-child(2)::after {
+  width: calc(100% + 1px);
+  opacity: 0;
+}
+
+nav ul li:nth-child(2):hover::after {
+  opacity: 1;
+  background: #f00;
+}
+
+nav ul li:nth-child(3) {
+  border-left: 10px solid #0a933a;
+}
+
+nav ul li:nth-child(3)::after {
+  width: calc(100% + 1px);
+  height: 0;
+}
+
+nav ul li:nth-child(3):hover::after {
+  height: 100%;
+  background: #0a933a;
+}
+
+nav ul li:nth-child(4) {
+  border-left: 10px solid #3915bf;
+}
+
+nav ul li:nth-child(4)::after {
+  width: calc(100% + 1px);
+}
+
+nav ul li:nth-child(4):hover::after {
+  left: -5px;
+  transform: scale(1.2);
+  background: #3915bf;
+}
+
+nav ul li::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  top: 0;
+  left: -1px;
+  bottom: 0;
+  z-index: 0;
+  transition: all 0.4s ease;
+}
+
+nav ul li span {
+  position: relative;
+  z-index: 3;
+  font-weight: 700;
+}
+
+nav ul li:hover span {
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    width: 82vw;
+  }
+}
