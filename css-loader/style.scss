@@ -1,0 +1,58 @@
+$loader-background: rgba(0, 0, 0, 0.3);
+$loader-foreground: #fff;
+$loader-dimension: 10rem;
+$loader-section-dimension: 1rem;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  background-image: radial-gradient(
+    circle 941px at 3.8% 14.3%,
+    rgba(128, 122, 242, 1) 19.2%,
+    rgba(102, 249, 214, 1) 75.6%
+  );
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+@keyframes animate-loader {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader,
+.loader::before {
+  border-radius: 50%;
+  width: $loader-dimension;
+  height: $loader-dimension;
+}
+
+.loader {
+  border-left: $loader-section-dimension solid $loader-background;
+  border-right: $loader-section-dimension solid $loader-background;
+  border-bottom: $loader-section-dimension solid $loader-background;
+  border-top: $loader-section-dimension solid $loader-foreground;
+  animation: animate-loader linear 2s infinite;
+}
