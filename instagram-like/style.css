@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap');
+
+:root {
+  --heart-background: #e15256;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #396afc, #2948ff);
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Noto Sans HK', sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.instagram-like {
+  display: flex;
+  width: 280px;
+  height: 180px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background: var(--heart-background);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5), 0 0 3px rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.instagram-like::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid var(--heart-background);
+  position: absolute;
+  top: 97%;
+}
+
+.instagram-like #instagram-heart {
+  font-size: 8rem;
+}
+
+.instagram-like #instagram-like-count {
+  min-width: 90px;
+  padding: 0 0.5rem;
+  font-size: 5rem;
+  text-align: center;
+}
+
+@keyframes animation-pop {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animation-beat {
+  from {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-count {
+  animation: animation-pop 0.5s alternate;
+}
+
+.animate-beat {
+  animation: animation-beat 0.5s ease;
+}
