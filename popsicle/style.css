@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-shadow: 0 0 50px inset rgba(0, 0, 0, 0.8);
+  background-image: radial-gradient(
+    circle 273px at 9.7% 50.7%,
+    rgba(86, 204, 242, 1) 0%,
+    rgba(47, 128, 237, 1) 90%
+  );
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Caveat Brush', cursive;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  display: none;
+  position: absolute;
+  top: 5%;
+  font-size: 3.5rem;
+  color: #fff;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 1px #a4a4a4, 1px 2px 1px #a4a4a4, 1px 3px 1px #a4a4a4,
+    1px 4px 1px #a4a4a4, 1px 5px 1px #a4a4a4, 1px 6px 1px #a4a4a4,
+    1px 7px 1px #a4a4a4, 1px 8px 1px #a4a4a4, 1px 9px 1px #a4a4a4,
+    1px 10px 1px #a4a4a4, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.popsicle {
+  width: 140px;
+  height: 250px;
+  position: relative;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 10px inset rgba(0, 0, 0, 0.3), 0 0 10px rgba(100, 63, 73, 0.7);
+  background: #ff8abb;
+}
+
+.popsicle::before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 70%;
+  border-radius: 8px;
+  position: absolute;
+  left: 10px;
+  top: 26%;
+  box-shadow: 0 0 3px inset rgba(255, 255, 255, 0.3);
+  background: #ffc4d6;
+}
+
+.glow-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  left: 76%;
+  top: 19%;
+  box-shadow: 0 0 3px inset rgba(255, 255, 255, 0.6);
+  background: #ffc4d6;
+}
+
+.drip,
+.drop {
+  width: 16px;
+  position: absolute;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0 10px inset rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  background: #ff8abb;
+}
+
+@keyframes animation-drip {
+  from {
+    height: 3px;
+  }
+
+  to {
+    height: 32px;
+  }
+}
+
+.drip {
+  height: 3px;
+  top: 98%;
+  left: 16%;
+  animation: animation-drip 15s ease forwards;
+}
+
+@keyframes animation-drop {
+  from {
+    height: 3px;
+  }
+
+  to {
+    height: 51px;
+  }
+}
+
+.drop {
+  height: 51px;
+  top: 98%;
+  left: 76%;
+  animation: animation-drop 10s ease forwards;
+}
+
+.popsicle-stick {
+  width: 30px;
+  height: 85px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  position: absolute;
+  top: 99.98%;
+  left: 40%;
+  z-index: -1;
+  box-shadow: 0 2px 8px inset rgba(0, 0, 0, 0.5);
+  background: #eca168;
+}
+
+@media screen and (min-height: 500px) {
+  h1 {
+    display: block !important;
+  }
+}
