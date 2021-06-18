@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Time Picker</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<main>
+			<section>
+				<h2>Pick your time</h2>
+
+				<div id="time-wrapper">
+					<span id="time-value" data-value="00:00"></span>
+
+					<div id="time-picker" data-open="false">
+						<div>
+							<span class="time-inc">&#9650;</span>
+							<span class="time-inc">&#9650;</span>
+						</div>
+
+						<div>
+							<span id="time-hours" data-value="0"></span>
+							<span id="time-minutes" data-value="0"></span>
+						</div>
+
+						<div>
+							<span class="time-dec disabled">&#9660;</span>
+							<span class="time-dec disabled">&#9660;</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="script.js"></script>
+	</body>
+
+</html>
