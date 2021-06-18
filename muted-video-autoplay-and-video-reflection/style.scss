@@ -1,0 +1,17 @@
+body {
+  background: #001133;
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  display: flex;
+  height: 97vh;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#video-db {
+  width: 50vw;
+  height: 50vh;
+  -webkit-box-reflect: below 0 linear-gradient(transparent, red);
+}
