@@ -1,0 +1,269 @@
+/*
+ Upcoming, CSS variables
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(to bottom right, #ccc 30%, #eee, #ccc 85%);
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main:fullscreen {
+  background: linear-gradient(to bottom right, #6441a5, #ccc);
+}
+
+#section-mobile {
+  display: inline-block;
+  width: 60%;
+}
+
+#section-color {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+}
+
+#section-color h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@keyframes animation-screen {
+  from {
+    top: -30px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+.square {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.color__black {
+  background: #000;
+}
+
+.color__blue {
+  background: #00f;
+}
+
+.color__white {
+  background: #fff;
+}
+
+.color__green {
+  background: #056608;
+}
+
+.mobile-screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000;
+  overflow: auto;
+  transition: all ease 1s;
+  border-radius: 5px;
+  animation: animation-screen ease-out 1.5s 1 forwards;
+}
+
+@keyframes animation-ui {
+  from {
+    border: 1px solid #000;
+    border-radius: 1px;
+    box-shadow: 0 0 1px inset rgba(255, 255, 255, 0.2),
+      0 0 1px rgba(255, 255, 255, 0.6), 0 0 1px rgba(0, 0, 0, 0.8);
+  }
+
+  to {
+    border: 6px solid #000;
+    border-radius: 30px;
+    box-shadow: 0 0 60px inset rgba(255, 255, 255, 0.2),
+      0 0 3px rgba(255, 255, 255, 0.7), 0 0 5px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.mobile-ui {
+  position: relative;
+  width: 240px;
+  height: 500px;
+  margin: auto;
+  background: #000;
+  border: 1px solid #000;
+  border-radius: 1px;
+  overflow: hidden;
+  box-shadow: 0 0 1px inset rgba(255, 255, 255, 0.4),
+    0 0 4px rgba(255, 255, 255, 0.45), 0 0 15px rgba(0, 0, 0, 0.8);
+  transition: all ease 1s, transform ease-in 1.5s;
+  animation: animation-ui ease 3s 1 forwards;
+}
+
+.mobile-ui.fullscreen {
+  transform: scale(1.45);
+}
+
+@keyframes animation-top {
+  from {
+    top: -100px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+.mobile-ui::before {
+  content: '';
+  width: 100%;
+  height: 5%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background: #000;
+  z-index: 1;
+  transition: all ease 0.3s;
+  animation: animation-top ease 1.5s 1 forwards;
+}
+
+@keyframes animation-bottom {
+  from {
+    bottom: -100px;
+  }
+
+  to {
+    bottom: 0;
+  }
+}
+
+.mobile-ui::after {
+  content: '';
+  width: 100%;
+  height: 4%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: #000;
+  z-index: 2;
+  transition: all ease 0.3s;
+  animation: animation-bottom ease 1.5s 1 forwards;
+}
+
+.mobile-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 2rem 0 2.8rem;
+  position: absolute;
+  top: 2px;
+  z-index: 2;
+}
+
+.mobile-camera {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjEuNv1OCegAAAPkSURBVDhPZVRLb2plFD19CAcOnBfnHDi8S0spLVBaoLctpbdg3y0tj0JLW42J0ZiYmNTZHWji0Jhg4tDoD1DnDpyrP0ATHcvQH7Hc+2vuTRtJPl5n77X3XmuvTwLw7NAr7vF4xqZpTqLRKNLpNLLZLDKZDFzXha7rk9nZ2THH/S/36Y+ZmZmBZVnI5XLYfLGJ/f19nJ6eod2+wPn5OQ4PD7G9vY35+Xlomobp6enB0/w3X6jaQyKRwMbGBo6OjtDt9tDr9QjkDCcnJwKs2+1iMBjg7OwMlUoFjuMw4MMzMAIapFIpNBoNXFxcoN/vo/V2C6vlAuYyKSSTcRo3haV8Do3dXVxdDUTM1tYWIpHImw4FR7ZtC6BOp0OBV6hVKwiHbWiqATUQQjBgIUCfiqJCNwwqUqKuu4+xtRo9CzBSXPL5fONisUjcnAqw9fUKgWjwyzremvFxEHxyGLa1gpCxQP8boBysLC8LsHa7jYWFBQhRqKtJs9kUQPWdOhGrigRFdhFOLCNV3oLq5KhADpa5DMfMwu81RDcsxs3NDer1OoLB4ERiyZlc5ooryF6FgGzMeMN4+Oob/PT3P6hefkwdOlD9aYTtVdhGDn6filQ6gU63I6ZKJpOQCoWCUI0VcqMuVbQR8LnwKFF8+vX3+OHPf1HvvMK0lICqZBFxXsC1N6ApMViWKdan1+ujUFiBVCqVhDJHR4dgITQ1AjuUh6rOI5RuIFm8hhvZgyYXoQdqiIYPkY4eI0RjG4aOly8buL6+FqsiLRORl5eXaLWacBgs6CDslGDZa1B8i5ClOURCO1hauSMX3CHujJCN3yFilGGaBprNPdyObh/BmCcmn+dOpRKCC8fKU3erCFvrMOQSjXWCdz/8Dp989CM25z9H1v4AtpaHG7OI6zZ1doN8Pg+J/DdhAVjm9fU1IbupJ0m1IiJmFW6oBd1/jt72l/j5s7/w7Tu/ohp7Dx6vhsWlDAENBefk24lEEo958Zg3FiGRiMLvV4iTOcRCm8ilR0iE38dG7BV+efgDv3/xG6rpGnyqD02i5vb2lkZtUo5/LJEV4uxJHpN9x0K4bhiy7IOjp5GPNZGPklrRe9QzHcw5KZiWhp3dHdzf34sm2Ph0ScSFN2VZHrCqzB0rw8BLSzkiWBfLqZIjAsEA5IAH0WQMe82WWFaOLZfL8Hq9j97kNz6KojxUq1UxPwdxRb4tturbqNQqZOpN0fXrm4M5XltbY6Dnt8brwxUWFxcFCCcMh0Nx+ld9DAdD0c1oNBKds3P4tnma/wyMz9TUVJy6HNPKTNhzfCEeHx/j4OBAeJFAJkw2xz3PhfQfs4tU3jXo2BgAAAAASUVORK5CYII=');
+  background-size: 100% 100%;
+}
+
+.mobile-speaker {
+  display: inline-block;
+  width: 40px;
+  height: 4px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px inset #000;
+  background: rgba(53, 51, 57, 1);
+}
+
+.mobile-light-sensor {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: rgba(55, 44, 60, 0.85);
+}
+
+.mobile-flash {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 0, 0.5);
+}
+
+.mobile-screen::-webkit-scrollbar {
+  width: 3px;
+}
+
+.mobile-screen::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.mobile-screen::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.mobile-screen-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.mobile-screen-content * {
+  width: 100%;
+  height: auto;
+}
+
+#toast-main {
+  position: absolute;
+  bottom: 40px;
+  left: 5%;
+  right: 5%;
+  padding: 0.5rem;
+  background: rgba(68, 68, 68, 0.85);
+  border: 2px solid rgba(119, 119, 119, 0.35);
+  border-radius: 5px;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  text-align: center;
+  transition: opacity ease-out 0.3s;
+}
+
+#toast-main.active {
+  opacity: 1;
+}
