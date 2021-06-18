@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to bottom right, #0575e6, #021b79);
+  font-family: 'Lato', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.radio-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.radio-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.4rem 1.4rem;
+  padding: 10px;
+  position: relative;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: all ease 0.4s;
+}
+
+.radio-btn:hover {
+  box-shadow: 0 0 12px inset rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.radio-btn * {
+  cursor: pointer;
+}
+
+.radio-btn input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.radio-btn label span:first-child {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.radio-btn label span:first-child::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(0, 128, 255);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  transform: translate(50%, 50%);
+}
+
+.radio-btn input:not(:checked) + label span:first-child {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.radio-btn input:not(:checked) + label span:first-child::after {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.radio-btn input:checked + label span:first-child {
+  background: #fff;
+}
+
+.radio-btn label span {
+  display: inline-block;
+  vertical-align: middle;
+}
