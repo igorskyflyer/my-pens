@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Searchable HTML Dropdown</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<main>
+			<h1>Searchable HTML&ndash;Only Dropdown</h1>
+			<form>
+				<label for="favLanguage">Your Favourite Language</label>
+
+				<datalist id="languages">
+					<option value="HTML">
+					<option value="CSS">
+					<option value="JavaScript">
+					<option value="C">
+					<option value="C&plus;&plus;">
+					<option value="C&#35;">
+					<option value="PHP">
+					<option value="Python">
+				</datalist>
+
+				<input list="languages" id="favLanguage" name="favLanguage" placeholder="Search&hellip;">
+			</form>
+		</main>
+	</body>
+
+</html>
