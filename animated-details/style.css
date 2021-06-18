@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  background-image: radial-gradient(
+    circle farthest-corner at 28.8% 83.9%,
+    rgba(255, 110, 112, 1) 0%,
+    rgba(255, 116, 142, 1) 90%
+  );
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main div {
+  width: 80%;
+  padding: 1rem;
+  border: 3px dashed #fff;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+main div details {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+main div details summary {
+  letter-spacing: 5px;
+}
+
+main div details p {
+  margin-top: 1rem;
+  opacity: 0;
+  transform: scale(0);
+  cursor: default;
+  font-size: 1rem;
+}
+
+@keyframes animate-open {
+  from {
+    opacity: 0;
+    transform: scale(0) translateX(-200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateX(0px);
+  }
+}
+
+details[open] p {
+  animation: animate-open 0.4s ease-in-out forwards;
+}
