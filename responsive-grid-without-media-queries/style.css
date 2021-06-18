@@ -1,0 +1,44 @@
+body {
+  background: #001133;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-gap: 0.5rem;
+  padding: 0;
+}
+
+.grid li {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.3rem;
+  list-style: none;
+  border-radius: 4px;
+  transition: all ease-in-out 0.2s;
+}
+
+.grid li:nth-child(odd) {
+  background: linear-gradient(to bottom right, #00d2ff, #3a7bd5);
+}
+
+.grid li:nth-child(even) {
+  background: linear-gradient(to bottom right, #4b6cb7, #182848);
+}
+
+.grid li:hover {
+  filter: brightness(60%);
+  box-shadow: 0 0 5px inset #000;
+  cursor: pointer;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 0.5rem 1.5rem;
+}
