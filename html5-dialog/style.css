@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  background-image: linear-gradient(
+    91.3deg,
+    rgba(135, 174, 220, 1) 1.5%,
+    rgba(255, 255, 255, 1) 100.3%
+  );
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main dialog {
+  position: relative;
+}
+
+main dialog[open] {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  height: 65%;
+  padding: 2rem;
+  top: 17.5%;
+  left: 30%;
+  transform: scale(0);
+  border-radius: 8px;
+  border: solid 5px #05f;
+  box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.3);
+  text-align: center;
+  transition: transform linear 0.2s;
+}
+
+main dialog.show {
+  transform: scale(1);
+}
+
+main dialog.close {
+  transform: scale(0);
+}
+
+main dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+main dialog h2 {
+  width: 80%;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+@keyframes animate-button {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 500% 500%;
+  }
+}
+
+main button#btn-dialog {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 1rem 2rem;
+  border: 2px solid transparent;
+  outline: 0;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  background: #05f;
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: all linear 0.3s;
+}
+
+main button#btn-dialog:hover {
+  background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.15) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(0, 0, 0, 0.15) 50%,
+      rgba(0, 0, 0, 0.15) 75%,
+      transparent 75%,
+      transparent
+    ),
+    #05f no-repeat;
+  background-size: 40%;
+  background-position: 0 0;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 80px 4px rgba(0, 0, 0, 0.6);
+  animation: animate-button linear 2s alternate infinite;
+}
+
+main dialog button#btn-close {
+  min-width: 40px;
+  min-height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: transparent;
+  color: #222;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  main dialog[open] {
+    width: 80%;
+    left: 10%;
+    height: 70%;
+    top: 15%;
+  }
+}
