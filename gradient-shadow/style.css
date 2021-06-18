@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  background-image: linear-gradient(
+    180.4deg,
+    rgba(9, 30, 61, 1) 45.3%,
+    rgba(95, 123, 190, 1) 279%
+  );
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Dosis', sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 250px;
+  position: relative;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to bottom, #000 0, #222 50%, #000 100%);
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.box::before,
+.box::after {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  z-index: -1;
+  background-image: linear-gradient(
+    76.6deg,
+    rgba(239, 88, 88, 1) 11.4%,
+    rgba(224, 165, 88, 1) 24%,
+    rgba(225, 222, 110, 1) 38.9%,
+    rgba(76, 224, 126, 1) 54.9%,
+    rgba(132, 140, 238, 1) 70.2%,
+    rgba(197, 132, 238, 1) 82.8%
+  );
+  background-size: 300%;
+  animation: animate-border 5s alternate infinite;
+}
+
+@keyframes animate-border {
+  0% {
+    background-position: 100%;
+  }
+
+  25% {
+    background-position: 180%;
+  }
+
+  50% {
+    background-position: 250%;
+  }
+
+  100% {
+    background-position: 300%;
+  }
+}
+
+.box::before {
+  filter: blur(15px);
+}
