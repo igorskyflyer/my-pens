@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+}
+
+h1 {
+  width: 60%;
+  position: relative;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  cursor: help;
+  text-align: center;
+}
+
+[data-title]::before,
+[data-title]::after {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  transform: scale(0);
+  transition: all ease-in 100ms;
+  z-index: 100;
+}
+
+[data-title]::before {
+  content: '';
+  left: 25%;
+  right: 25%;
+  bottom: -1rem;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 16px dashed rgba(0, 0, 0, 0.35);
+}
+
+[data-title]::after {
+  content: attr(data-title);
+  left: 25%;
+  right: 25%;
+  margin: 1rem auto auto auto;
+  border-radius: 6px;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.35);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+[data-title]:hover::before,
+[data-title]:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
