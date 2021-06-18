@@ -1,0 +1,32 @@
+{
+  "name": "@igorskyflyer/my-pens",
+  "version": "1.0.0",
+  "description": "🕊️ Sources of my CodePens. ✒️",
+  "scripts": {
+    "sass": "sass --no-source-map --watch ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorskyflyer/my-pens.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "sass",
+    "igorskyflyer",
+    "frontend",
+    "labs",
+    "design",
+    "ui",
+    "ux"
+  ],
+  "author": "Igor Dimitrijević",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/igorskyflyer/my-pens/issues"
+  },
+  "homepage": "https://github.com/igorskyflyer/my-pens#readme",
+  "devDependencies": {
+    "sass": "^1.35.1"
+  }
+}
