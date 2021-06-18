@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap');
+
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/solid.css');
+
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: linear-gradient(to right, #0575e6, #021b79);
+  color: #fff;
+  font-family: 'Noto Sans HK', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+}
+
+.fas {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.ui-toolbar {
+  padding: 1rem;
+  text-align: right;
+}
+
+.ui-toolbar a {
+  padding: 10px;
+  color: #fff;
+  transition: background linear 0.2s;
+}
+
+.ui-toolbar a:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.ui-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 85vh;
+}
+
+.ui-searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ui-searchbar h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+.ui-searchbar input {
+  width: 30rem;
+  padding: 1rem 1rem;
+  border-radius: 30px;
+  border: none;
+  outline: 0;
+  font-family: 'Noto Sans HK', sans-serif;
+  font-weight: bold;
+}
+
+.ui-topsites {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 15px;
+  width: 65%;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+.ui-topsites-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 8px;
+  position: relative;
+  transition: background ease-in 0.3s;
+}
+
+.ui-topsites-item:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.ui-topsites-item:hover > .ui-topsite-icon {
+  background: #09f;
+}
+
+.ui-topsites-item-edit {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 0;
+  transition: all linear 0.2s;
+}
+
+.ui-topsites-item-edit:hover {
+  opacity: 1;
+}
+
+.ui-topsite-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  pointer-events: none;
+  color: #fff;
+  transition: background ease-in 0.1s;
+}
+
+.ui-topsites-item span {
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.ui-edit {
+  width: 100%;
+  padding-right: 2rem;
+  text-align: right;
+}
+
+#btn-edit {
+  cursor: pointer;
+}
