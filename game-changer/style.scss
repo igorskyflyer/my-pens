@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+
+$main-color: #fff;
+$accent-color: #0087a2;
+
+$base-font-size: 16px;
+$main-size: $base-font-size * 4;
+$divider-height: $main-size * 2;
+$accent-size: $base-font-size * 1.5;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+span {
+  font-family: 'Trade Winds', cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.title-be {
+  color: $main-color;
+  font-size: $main-size;
+}
+
+.divider-line {
+  display: inline-block;
+  width: 2px;
+  margin: 0 1rem 0 1.5rem;
+  height: $divider-height;
+  background-color: $accent-color;
+}
+
+.title-game {
+  width: 60%;
+  font-size: $accent-size;
+  color: $accent-color;
+  text-align: center;
+}
