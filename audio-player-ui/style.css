@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
+
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/solid.css');
+
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #001133;
+  font-family: 'Prompt', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.ui {
+  width: 280px;
+  height: 500px;
+  padding: 5px 15px;
+  border-radius: 4px;
+  background: linear-gradient(
+    45deg,
+    #d2dfed 0%,
+    #c8d7eb 26%,
+    #bed0ea 51%,
+    #a6c0e3 51%,
+    #afc7e8 62%,
+    #bad0ef 75%,
+    #99b5db 88%,
+    #799bc8 100%
+  );
+}
+
+.ui-toolbar {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ui-cover {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ui-cover-art {
+  width: 120px;
+}
+
+.ui-cover-title {
+  text-align: center;
+}
+
+.ui-actions {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ui-seekbar {
+  height: 10%;
+  text-align: center;
+}
+
+.ui-seekbar .ui-slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 8px;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  background: #fff;
+}
+
+.ui-seekbar .ui-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #09f;
+  cursor: pointer;
+}
+
+.ui-controls {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
