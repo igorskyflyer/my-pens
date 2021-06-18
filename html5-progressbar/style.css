@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+div.break {
+  padding: 1.5rem 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-family: 'Manjari', sans-serif;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 248px;
+}
+
+progress[value]::-webkit-progress-value {
+  background: linear-gradient(to right, rgb(0, 3, 135), rgb(22, 140, 255));
+  border-radius: 10px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: rgba(0, 0, 0, 0.67);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8) inset;
+}
+
+.progress-big {
+  height: 20px;
+}
+
+.progress-small {
+  height: 10px;
+}
