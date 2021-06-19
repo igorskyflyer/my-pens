@@ -36,6 +36,68 @@ Below is the list of original Pens and their counterparts available here on Gith
 
 📌 **Endless Road** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/endless-road) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/QXBrXz)
 
+📌 **Expanding Searchbox** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/expanding-searchbox) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/OewvyL)
+
+📌 **Face Hexagons** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/face-hexagons) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/agWYZa)
+
+📌 **FM Radio Card** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/fm-radio-card) 🧿 [CodePen](https://codepen.io/igorskyflyer/details/MdPNNp)
+
+📌 **Game Changer** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/game-changer) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/wvwyGpa)
+
+📌 **Gradient Border** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/gradient-border) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/wLEqVj)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📌 **with Animation** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/gradient-border/with-animation) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/KjxXNY)
+
+📌 **Gradient Shadow** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/gradient-shadow) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/vqzeRd)
+
+📌 **Grid System with Flex 💪** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/grid-system-with-flex) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/pYvaYN)
+
+📌 **Having Fun with border-image** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/having-fun-with-border-image) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/gEOmPo)
+
+📌 **HTML5 Dialog** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/html5-dialog) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/agrGXm)
+
+📌 **HTML5 Progressbar** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/html5-progressbar) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/dxqgqr)
+
+📌 **Instagram Like 💗** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/instagram-like) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/dBXNaj)
+
+📌 **Interactive 3D Cube** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/interactive-3d-cube) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/XvbQpp)
+
+📌 **Interval Picker** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/interval-picker) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/oNbLmwP)
+
+📌 **Laptop Prototype** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/laptop-prototype) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/orWEjo)
+
+📌 **Muted Video Auto-Play and Video Reflection** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/muted-video-autoplay-and-video-reflection) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/xBrwza)
+
+📌 **My Mobile (SM-A605)** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/my-mobile-SM-A605) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/pmGyGR)
+
+📌 **New Tab Page** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/new-tab-page) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/xNmEGZ)
+
+📌 **Popsicle** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/popsicle) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/ydaMYJ)
+
+📌 **Radio Buttons** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/radio-buttons) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/JqaYKK)
+
+📌 **Responsive Grid without Media Queries** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/responsive-grid-without-media-queries) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/YbZNMo)
+
+📌 **Searchable HTML Dropdown** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/searchable-html-dropdown) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/MMRqNy)
+
+📌 **Stripes TImed Effect** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/stripes-timed-effect) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/WNbjQEB)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📌 **CITY** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/stripes-timed-effect/city) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/MWYmaLe)
+
+📌 **Text Decorations** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/text-decorations) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/MMdGRW)
+
+📌 **Text with Image Background** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/text-with-image-background) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/KjxyBW)
+
+📌 **Time Picker** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/time-picker) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/rNxWNqq)
+
+📌 **Tooltips** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/tooltips) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/MMbQOV)
+
+📌 **Weather Card** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/weather-card) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/zQaXqW)
+
+📌 **Web Template** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/web-template) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/YbvBRQ)
+
+📌 **Workdays Checkboxes** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/workdays-checkboxes) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/QWyEZzd)
+
 <br>
 <br>
 
