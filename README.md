@@ -18,7 +18,11 @@ Below is the list of original Pens and their counterparts available here on Gith
 
 📌 **Animated Striped Button** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/animated-striped-button) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/JQVaOE)
 
-📌 **Audio Player UI** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/audio-player-ui) 🧿 [CodePen](https://codepen.io/igorskyflyer/details/OYaLrb)
+📌 **Audio Player UI** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/audio-player-ui) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/OYaLrb)
+
+📌 **Auto-Pausing Video** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/auto-pausing-video) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/oRZZLr)
+
+📌 **Box Decoration** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/box-decoration) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/joxoNp)
 
 📌 **Card Switcher** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/card-switcher) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/orGMdy)
 
@@ -40,7 +44,9 @@ Below is the list of original Pens and their counterparts available here on Gith
 
 📌 **Face Hexagons** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/face-hexagons) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/agWYZa)
 
-📌 **FM Radio Card** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/fm-radio-card) 🧿 [CodePen](https://codepen.io/igorskyflyer/details/MdPNNp)
+📌 **Flip Card** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/flip-card) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/byMJQo)
+
+📌 **FM Radio Card** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/fm-radio-card) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/MdPNNp)
 
 📌 **Game Changer** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/game-changer) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/wvwyGpa)
 
