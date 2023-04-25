@@ -86,7 +86,7 @@ Below is the list of original Pens and their counterparts available here on Gith
 
 📌 **Searchable HTML Dropdown** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/searchable-html-dropdown) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/MMRqNy)
 
-📌 **Stripes TImed Effect** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/stripes-timed-effect) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/WNbjQEB)
+📌 **Stripes Timed Effect** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/stripes-timed-effect) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/WNbjQEB)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📌 **CITY** &gt; [Github](https://github.com/igorskyflyer/my-pens/tree/main/stripes-timed-effect/city) 🧿 [CodePen](https://codepen.io/igorskyflyer/pen/MWYmaLe)
 
